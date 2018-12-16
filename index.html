@@ -3,18 +3,22 @@
 <head>
 	<title>To Do List</title>
 	<link rel="stylesheet" type="text/css" href="todolist.css">
-	<script type="text/javascript" src="todolist.js"></script>
 </head>
 <body>
 		<div id="myDIV" class="header">
 	  <h2>My To Do List</h2>
 	  <input type="text" id="myInput" placeholder="Title...">
-	  <span onclick="newElement()" class="addBtn">Add</span>
+	  <div class = "addBtn">	
+	  		<button type="button" onclick="newElement()" id="Btn1">Add</button>
+	  		<button type="button" onclick="removeElement()" id="Btn2">Remove</button>
+	  </div>
 	</div>
 
-	<ul id="myUL">
-	  <li>Hit the gym</li>
-	  <li class="checked">Pay bills</li>
+	<ul ="myUL">
+
+
+	  <li >Hit the gym</li>
+	  <li>Pay bills</li>
 	  <li>Meet George</li>
 	  <li>Buy eggs</li>
 	  <li>Read a book</li>
@@ -22,4 +26,5 @@
 	</ul>
 
 </body>
+<script type="text/javascript" src="todolist.js"></script>
 </html>
